@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(168, 239, 253);
+}
+
+div{
+    display: flex;
+    border-style: groove;
+    margin: 20px;
+    align-items: center;
+    float: left;
+    padding-left: 50px;
+
+}
+
+.q1, .q2, .q3, .q4{
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    align-items: center;
+}
+
+h1{
+
+    text-align: center;
+}

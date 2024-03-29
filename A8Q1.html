@@ -1,0 +1,27 @@
+<!--Implement a Javascript function that accept number of rows(m) and columns(n) from user and displays a 2D m x n square 
+    layout of alternate colors black and red.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table bgcolor="bbc2f7" border="1" cellspacing="0" align="centre" height="100">
+        <script>
+            r=parseInt(prompt("Enter number of rows:"));
+            c=parseInt(prompt("Enter number of columns:"));
+            for(i=0;i<r;i++)
+            {
+                document.write("<tr cellspacing='2'>")
+                    for(j=0;j<c;j++){
+                        document.write("<td>" + (i+1)*(j+1) + "</td>");
+                    }
+                document.write("</tr>")
+            }
+        </script>
+    </table>
+    
+</body>
+</html>

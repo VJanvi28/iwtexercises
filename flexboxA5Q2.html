@@ -1,0 +1,73 @@
+<!--Create a webpage that displays your favourite quotations in a web page just above images. 
+    You have to use border, height, width, margin, padding, outline properties of CSS. 
+    Also use text and font properties to add effects in text to display quotations.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>14flexbox</title>
+        <style>
+            div{
+                height: 400px;
+                width: 400px;
+                background-color: red;
+                color: white;
+                font-size: 40px;
+                font-weight: 700;
+                margin: 10px;
+            }
+    
+            .container{
+                display:flex;
+                width: auto;
+                height: auto; 
+                background-color: black;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+            }
+    
+            .container div{
+                display: flex;
+                align-content: space-evenly;
+                justify-content: center;
+                align-items: center;
+                border: blue 10px double;
+            }
+    
+            .d1{
+                position: relative;
+            }
+    
+            .d1 img{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 9;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="d1">
+                <img src="images/20.jpeg" />
+                <span style="z-index: 10"> <q>ABC DEF GHI</q> </span> 
+            </div>
+            <div class="d1">
+                <img src="images/11.jpeg" />
+                <span style="z-index: 10"> <q>ABC DEF GHI</q> </span> 
+            </div>
+            <div class="d1">
+                <img src="images/13.jpeg" />
+                <span style="z-index: 10"> <q>ABC DEF GHI</q> </span> 
+            </div>
+            <div class="d1">
+                <img src="images/16.jpeg" />
+                <span style="z-index: 10"> <q>ABC DEF GHI</q> </span> 
+            </div>
+        </div>
+    </body>
+    </html>
